@@ -1,0 +1,77 @@
+/* .blogpage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+} */
+
+.background-image{
+    height: 100vh;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px; /* Set a max-width for the grid container */
+  margin: 25px auto; /* Horizontally center the grid */
+  padding: 0 20px; /* Add some padding for smaller screens */
+}
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space below the image */
+}
+
+
+.blog-card {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px); /* Adds a hover effect to lift the card */
+}
+
+.blog-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.read-more {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 1.5rem;
+  }
+
+  .blog-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .blog-card {
+    padding: 15px;
+  }
+}

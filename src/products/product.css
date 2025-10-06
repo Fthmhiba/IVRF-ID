@@ -1,0 +1,223 @@
+/* ==== CONTAINER BACKGROUNDS ==== */
+.unique-whatset-product1,
+.unique-whatset-product2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #d8d8d8de;
+    text-align: center;
+}
+
+/* .unique-whatset-product1 {
+    padding: 20px;
+} */
+
+.unique-whatset-product2 {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ==== GRID LAYOUT ==== */
+.unique-grid-container-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ==== PRODUCT CARD STYLING ==== */
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.product-number {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    margin-top: 8px;
+}
+
+.product-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.product-chat {
+    margin-top: 12px;
+}
+
+.chat-link {
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.chat-link:hover {
+    text-decoration: underline;
+}
+
+.read-more-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #660033;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.read-more-button:hover {
+    background-color: #99004d;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+/* ==== IMAGE STYLING ==== */
+.product-images img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* ==== FLEX SECTION ==== */
+.unique {
+    display: flex;
+    gap: 20px;
+    background-color: #d8d8d8de;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ==== TEXT SECTION ==== */
+.text-section-product {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: slideInLeft 1.2s ease-in-out;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ==== RESPONSIVE MEDIA QUERIES ==== */
+@media (max-width: 1024px) {
+    .read-more-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .unique {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section-product {
+        text-align: center;
+    }
+
+    .unique-grid-container-product {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .read-more-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .unique-grid-container-product {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .read-more-button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .text-section-product {
+        padding: 10px;
+    }
+}

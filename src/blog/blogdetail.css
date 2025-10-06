@@ -1,0 +1,40 @@
+/* In your blogdetails.css or relevant CSS file */
+/* .blog-details {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+} */
+
+.background-image{
+    height: 100vh;
+}
+
+.blog-content h1 {
+  text-align: center;
+}
+
+.blog-details p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.blog-text{
+  padding: 23px 120px 60px;
+
+}
+
+.blog-details h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 25px;
+}
+.blogimggg {
+  width: 50%;
+  margin-top: 20px;    /* Add space from the top */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: cover;    /* Make the image cover the container, while maintaining its aspect ratio */
+  border-radius: 8px;   /* Add rounded corners if you want */
+}

@@ -1,0 +1,432 @@
+/* General Layout */
+.unique-whatset-solution1 {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d8d8d8de;
+}
+
+/* Solutions Grid Layout */
+.solutions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Solution Card Styling */
+.solution-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.solution-header {
+    position: relative;
+}
+
+.solution-number {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: 0;
+}
+
+.solution-category {
+    color: rgb(214, 0, 0);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.solution-title {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+/* Show More Button */
+.show-more-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(0, 0, 110);
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+.show-more-button:hover {
+    color: rgb(214, 0, 0);
+}
+
+.show-more-button .arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.show-more-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Modal Styling */
+.solution-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.solution-modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2rem;
+    padding-top: 100px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal-button:hover {
+    color: #000;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.modal-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.modal-description {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.modal-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.nav-button {
+    background-color: rgb(0, 0, 110);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgb(0, 0, 150);
+}
+
+/* Background image container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .modal-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .solutions-container {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-card {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .solution-modal-content {
+        width: 95%;
+        padding: 1.5rem;
+        padding-top: 100px;
+    }
+}
+
+.solutions-PRODUCTS {
+    background-color: rgb(0, 9, 90);
+
+    justify-content: center;
+    padding: 20px;
+}
+
+/* ImageCarousel.css */
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-content {
+    height: 400px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Custom styling for Ant Design carousel dots */
+.ant-carousel .slick-dots li button {
+    background: #364d79;
+    opacity: 0.4;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    opacity: 1;
+    background: #364d79;
+}
+
+/* Hover effect for navigation arrows if you add them */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+    opacity: 1;
+}
+
+
+
+.rfid-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.rfid-content h2 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.rfid-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.rfid-image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.rfid-image-gallery img {
+    width: 32%;
+    max-width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rfid-image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.rfid-product-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.rfid-product {
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rfid-product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.rfid-product:hover {
+    transform: scale(1.1);
+}
+
+.rfid-key-features {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.rfid-key-features li {
+    background-color: #f8f9fa;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rfid-usedby {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.rfid-usedby img {
+    width: 32%;
+    max-width: 150px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rfid-furniture-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.rfid-furniture-gallery img {
+    width: 32%;
+    max-width: 280px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rfid-furniture-gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .rfid-image-gallery img {
+        width: 45%;
+    }
+
+    .rfid-product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rfid-product {
+        width: 80%;
+    }
+
+    .rfid-furniture-gallery img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .rfid-overlay-text {
+        font-size: 1.8em;
+        padding: 8px 15px;
+    }
+
+    .rfid-image-gallery img,
+    .rfid-furniture-gallery img {
+        width: 90%;
+    }
+
+    .rfid-content h2 {
+        font-size: 2em;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,401 @@
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homepage-carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.homepage-carousel-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.homepage-carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.homepage-carousel-title {
+    font-size: 2.3rem;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideUp 1s ease-out 0.5s forwards;
+}
+
+.homepage-carousel-description {
+    font-size: 1.2rem;
+    opacity: 0;
+    width: 800px;
+    animation: slideUp 1s ease-out 0.8s forwards;
+}
+
+.homepage-company-info {
+    text-align: left;
+    display: flex;
+    font-size: 3rem;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .homepage-carousel-title {
+        font-size: 1.4rem;
+    }
+
+    .homepage-carousel-description {
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .homepage-company-info {
+        font-size: 2rem;
+        flex-direction: column;
+        /* Stack elements vertically */
+        text-align: center;
+    }
+}
+
+
+
+.homepage-about-us-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021b3662;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    align-self: center;
+    margin-left: 0;
+    height: 50px;
+    width: 200px;
+}
+
+.homepage-about-us-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .homepage-about-us-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .homepage-about-us-button {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #021b3662;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 20px;
+        transition: background 0.3s ease;
+        align-self: flex-start;
+        margin-left: 0;
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.homepage-carousel-title,
+.homepage-carousel-description,
+.homepage-about-us-button {
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.homepage-carousel-title {
+    animation-delay: 0.5s;
+}
+
+.homepage-carousel-description {
+    animation-delay: 0.8s;
+}
+
+.homepage-about-us-button {
+    animation-delay: 1.2s;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 100%;
+    /* Ensure the image takes up full width of the container */
+    height: auto;
+    object-fit: cover;
+}
+
+.experience-counter {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    /* Adjust this value for horizontal positioning */
+    color: white;
+    /* Or adjust based on your design */
+    text-align: left;
+    background-color: #0056b3;
+    padding: 10px;
+    border-radius: 20px;
+
+    /* Align text to the left */
+}
+
+
+/* For screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .experience-counter {
+        bottom: 15px;
+        /* Reduce the bottom distance */
+        left: 15px;
+        /* Reduce the left distance */
+        padding: 8px;
+        /* Reduce padding */
+        font-size: 14px;
+        /* Smaller font size for mobile */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    .experience-counter {
+        bottom: 10px;
+        /* Further reduce the bottom distance */
+        left: 10px;
+        /* Further reduce the left distance */
+        padding: 6px;
+        /* Further reduce padding */
+        font-size: 12px;
+        /* Even smaller font size */
+    }
+}
+
+.counter-number {
+    font-size: 2rem;
+    /* Adjust the size as needed */
+    font-weight: bold;
+}
+
+.counter-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.company-logo-container {
+    position: absolute;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.company-logo-container {
+    top: 30px;
+    /* Adjust this value for vertical positioning */
+    right: 25px;
+
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-logo {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    /* Adjust the size of the logo */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-name-rotate {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    /* width: 200px; */
+    /* Set the radius of the circle */
+    height: 50px;
+    /* Adjust based on your needs */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    animation: rotate-name 10s linear infinite;
+}
+
+.letter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 50% 100%;
+    /* Position each letter along the circle */
+    font-size: 16px;
+    color: white;
+    /* Adjust text size */
+    transform: translateX(-50%);
+}
+
+@keyframes rotate-name {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* For screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .company-logo-container {
+        top: 25px;
+        right: 30px;
+    }
+
+    .company-logo {
+        width: 80px;
+        /* Smaller logo for smaller screens */
+        height: 80px;
+    }
+
+
+
+    .letter {
+        font-size: 14px;
+        /* Smaller text size for mobile */
+    }
+}
+
+.our_industaries {
+    background-color: rgb(0, 0, 87);
+    color: white;
+}
+
+.why-choose-us {
+    padding: 20px;
+}
+
+.unique-image-in {
+    /* Fallback color in case the image fails to load */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    line-height: 50px;
+
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease;
+
+    /* Background image properties */
+    background-size: cover;
+    /* Ensure the image covers the circle */
+    background-position: center;
+    /* Center the image inside the circle */
+    background-repeat: no-repeat;
+    /* Ensure the image doesn't repeat */
+}
+
+.unique-image-in:hover {
+    transform: scale(1.1);
+    /* Example animation when hovered */
+}
+
+/* Solution Card Styling */
+.home-card {
+    padding: 20px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.number-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #1a214d;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
