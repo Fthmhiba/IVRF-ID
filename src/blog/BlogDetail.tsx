@@ -839,7 +839,7 @@ In a city known for embracing technology, IV RFID SOLUTIONS stands out as a lead
   const blog = blogData.find((b) => b.id === id);
 
   if (!blog) {
-    return <div>Blog not found.</div>;
+    return <div>Blog not found.</div> ;    
   }
 
   return (
@@ -860,7 +860,7 @@ In a city known for embracing technology, IV RFID SOLUTIONS stands out as a lead
           content={blog.metadesc || blog.content.substring(0, 160)}
         />
       </Helmet>
-
+// helmet
       <Header />
 
       <div className="image-containerss">
