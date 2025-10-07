@@ -3,6 +3,7 @@ import Header from '../header/header'
 import Footer from '../footer/footer'
 import aboutbackground from '../assests/aboutbackground.jpeg'
 import { Helmet } from 'react-helmet'
+import DigitalLocker_Faq from './faq/digitalLocker_Faq'
 function DigitalLockerLocks() {
     return (
         <div>
@@ -159,6 +160,7 @@ function DigitalLockerLocks() {
 
                 </div>
             </div>
+            <DigitalLocker_Faq />
             <Footer />
         </div>
     )

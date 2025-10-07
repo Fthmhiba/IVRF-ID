@@ -19,7 +19,7 @@ import blog10 from '../assests/blog/blog10.jpg'
 import blog11 from '../assests/blog/blog11.jpg'
 import blog12 from '../assests/blog/blog12.jpg'
 import blog13 from '../assests/blog/blog13.jpg'
-
+import blog14 from '../assests/blog/blog14.jpg'
 
 
 
@@ -117,6 +117,13 @@ function Blog() {
       image: blog13, 
       description: "In today’s fast-paced world, businesses in the UAE are increasingly turning to smart technologies to improve efficiency, accuracy, and security. One of the most impactful...",
       link: "/blog/13",  // Set the dynamic link to BlogDetailsPage
+    },
+    {
+      id: '14',
+      title: "RFID Hardwares in Dubai – Smart Identification Solutions by IV RFID Solutions LLC",
+      image: blog14, 
+      description: "In the modern digital era, businesses are increasingly adopting automation and smart technologies to improve efficiency, security, and traceability...",
+      link: "/blog/14",  // Set the dynamic link to BlogDetailsPage
     },
   ];
 
