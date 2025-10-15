@@ -20,6 +20,7 @@ import blog11 from '../assests/blog/blog11.jpg'
 import blog12 from '../assests/blog/blog12.jpg'
 import blog13 from '../assests/blog/blog13.jpg'
 import blog14 from '../assests/blog/blog14.jpg'
+import blog15 from '../assests/blog/blog15.jpg'
 
 
 
@@ -124,6 +125,13 @@ function Blog() {
       image: blog14, 
       description: "In the modern digital era, businesses are increasingly adopting automation and smart technologies to improve efficiency, security, and traceability...",
       link: "/blog/14",  // Set the dynamic link to BlogDetailsPage
+    },
+    {
+      id: '15',
+      title: "Transforming Business Efficiency with the Best RFID Solutions in Dubai – IV RFID Solutions LLC",
+      image: blog15, 
+      description: "In today’s fast-paced business world, technology plays a crucial role in improving operational efficiency and security...",
+      link: "/blog/15",  // Set the dynamic link to BlogDetailsPage
     },
   ];
 
